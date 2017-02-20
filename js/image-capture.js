@@ -1,13 +1,27 @@
 
-function getImage() {
- navigator.camera.getPicture(uploadPhoto, function(message) {
- alert('get picture failed');
- }, {
- quality: 40,
- destinationType: navigator.camera.DestinationType.FILE_URI,
- sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
- });
+function capturePhoto() {
+// Take picture using device camera and retrieve image as base64-encoded string
+    navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 40, saveToPhotoAlbum: false, correctOrientation:true });
 }
+
+//Callback function when the picture has been successfully taken
+function onPhotoDataSuccess(imageData) {                
+    // Get image handle
+    var smallImage = document.getElementById('smallImage');
+
+    // Unhide image elements
+    smallImage.style.display = 'block';
+    smallImage.src = imageData;
+		uploadPhoto(imageData);
+}
+
+//Callback function when the picture has not been successfully taken
+function onFail(message) {
+    alert('Failed to load picture because: ' + message);
+}
+
+
+
 
 function uploadPhoto(imageURI) {
  var options = new FileUploadOptions();
