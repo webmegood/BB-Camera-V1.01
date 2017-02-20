@@ -38,7 +38,7 @@ function resolveOnSuccess(entry){
     var n = d.getTime();
     //new file name
     var newFileName = n + ".jpg";
-    var myFolderApp = "http://www.mediathrong.com/beepboards/tracking/bbtracker1.10/repo";
+    var myFolderApp = "http://www.mediathrong.com/beepboards/tracking/bbtracker1.10/upload.php";
 
     window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSys) {      
     //The folder is created if doesn't exist
