@@ -34,7 +34,7 @@ function uploadPhoto(imageURI) {
  options.chunkedMode = false;
 
 var ft = new FileTransfer();
- ft.upload(imageURI, "upload.php", function(result){
+ ft.upload(imageURI, "http://www.mediathrong.com/beepboards/tracking/bbtracker1.10/upload.php", function(result){
  console.log(JSON.stringify(result));
  }, function(error){
  console.log(JSON.stringify(error));
