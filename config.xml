@@ -6,15 +6,15 @@
         id        = "com.phonegap.example"
         version   = "1.0.0">
 
-    <name>Beep Boards Tracker Version 1.0</name>
+		<name>Beep Boards Vehicle Tracker</name>
 
-    <description>
-        Beep Boards driver tracking.
-    </description>
+		<description>
+			Tracks and logs client trips
+		</description>
 
-    <author href="http://mediathrong.com" email="support@mediathrong.com">
-        Media Throng Team
-    </author>
+		<author email="tech@beepboards.com.au" href="http://beepboards.com.au">
+			The Beep Boards Team
+		</author>
 
     <!--
         If you do not want any permissions to be added to your app, add the
@@ -54,6 +54,8 @@
 
 	<gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm" spec="2.0.0-rc.3"/>
 	<gap:plugin name="cordova-plugin-camera" source="npm"/>
+	<gap:plugin name="cordova-plugin-camera" source="npm" spec="~2.3.1" />
+
 
     <access origin="*"/>
     <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->

@@ -1,99 +1,87 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Untitled Document</title>
-    <script src="phonegap.js"></script>
-    <style>
-       button{
-         width:100%;
-         height:40px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-       }
-    </style>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Beep Boards Tracker v1.10</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <script>
-      var pictureSource;   // picture source
-    var destinationType; // sets the format of returned value 
-    document.addEventListener("deviceready",onDeviceReady,false);
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    // PhoneGap is ready to be used!
-    //
-    function onDeviceReady() {
-        pictureSource=navigator.camera.PictureSourceType;
-        destinationType=navigator.camera.DestinationType;
-    }
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    // Called when a photo is successfully retrieved
-    //
-    function cameraDataSucess(imageData) {
-      // Uncomment to view the base64 encoded image data
-      //console.log(imageData);
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
 
-      // Get image handle
-      //
-      var image = document.getElementById('myImage');
-      
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/phonegap.js"></script>
+  
+  
 
-      // Unhide image elements
-      //
-      myImage.style.display = 'block';
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
-      // Show the captured photo
-      // The inline CSS rules are used to resize the image
-      //
-      image.src = "data:image/jpeg;base64," + imageData;
-    }
+</head>
+<body>
 
-    // Called when a photo is successfully retrieved
-    //
-    function galleryDataSucess(imageURI) {
-      // Uncomment to view the image file URI 
-       console.log(imageURI);
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  
+  <div class="menu_strip">
+    <div class="logo"><img src="images/logom.png"></div>
+	</div>
+  
+  
+  
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" style="margin-top:100px; text-align:center">
+        <h3>Vehicle Tracker <div class="takePicBtn" id="takePicBtn"><i class="fa fa-camera fa-3" aria-hidden="true"></i></div></h3>
+        <div class="main_content" id="main_content">            
+          <div class="spinner" id="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+          </div>        
+          <!--p id="result"></p-->
+        </div>
+      </div>
+    </div>
+  </div>
 
-      // Get image handle
-      //
-      var largeImage = document.getElementById('largeImage');
 
-      // Unhide image elements
-      //
-      myImage.style.display = 'block';
+  
+  <div class="button_zone" id="button_zone">
+  	<!--div class="button button-primary">Stop + Upload</div-->
+  </div>
+  
+  
 
-      // Show the captured photo
-      // The inline CSS rules are used to resize the image
-      //
-      myImage.src = imageURI;
-    }
-
-    // A button will call this function
-    //
-    function capturePhoto() {
-      // Take picture using device camera and retrieve image as base64-encoded string
-      navigator.camera.getPicture(cameraDataSucess, onFail, { quality: 50,
-        destinationType: destinationType.DATA_URL });
-    }
-
-    // A button will call this function
-    //
-    function getPhoto(source) {
-      // Retrieve image file location from specified source
-      navigator.camera.getPicture(galleryDataSucess, onFail, { quality: 50, 
-        destinationType: destinationType.FILE_URI,
-        sourceType: source });
-    }
-
-    // Called if something bad happens.
-    // 
-    function onFail(message) {
-      alert('Failed because: ' + message);
-    }
-    </script>
-  </head>
-  <body>
-    <div>
-  <img src="" id="myImage" style="display:none;width:300px">
-  <button onclick="capturePhoto()">from Camera</button>
-  <button onClick="getPhoto(pictureSource.PHOTOLIBRARY);">from Gallery</button>
-</div>
-  </body>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
 </html>
+
+
+	<script type="text/javascript" src="js/gps.js"></script>
+	<script type="text/javascript" src="js/image-capture.js"></script>
+
+
+
+
+
