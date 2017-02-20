@@ -1,0 +1,99 @@
+.main_content {
+	text-align:center;
+}
+.menu_strip {
+	background: #DDD;
+	height: 50px;
+	text-align: center;
+	width: 100%;
+	display: block;
+	margin: 0;
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+	padding-top: 16px;
+	padding-bottom: 0px;
+}
+.logo img {
+	width: 250px;
+}
+.takePicBtn {
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	border: 4px solid #AAA;
+	border-radius: 50%;
+	position: fixed;
+	right: 12px;
+	top: 80px;
+	background-color: #F4F4F4;
+}
+.takePicBtn i {
+	color: #AAA;
+	line-height: 60px;
+}
+
+/* LOADER */
+.spinner {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin: 60px auto;
+}
+
+.double-bounce1, .double-bounce2 {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #CC9;
+	opacity: 0.7;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+	animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+
+
+
+.button_zone {
+	width: auto;
+	left: 25px;
+	right: 25px;
+	bottom: 20px;
+	position: absolute;
+}
+.button {
+	font-size: 1.2em;
+	width: 100%;
+	height: 60px;
+	line-height: 62px;
+	border: none;
+}
+#uploadBtn {
+	background-color: #C69;
+}
+#restartBtn {
+	background: #6C9;
+}
