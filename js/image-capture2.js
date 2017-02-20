@@ -5,7 +5,7 @@ $("#takePicBtn").click(function(){
 
 function capturePhoto() {
 // Take picture using device camera and retrieve image as base64-encoded string
-    navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50 });
+    navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50, saveToPhotoAlbum: false, correctOrientation:true });
 }
 
 //Callback function when the picture has been successfully taken
@@ -16,7 +16,7 @@ function onPhotoDataSuccess(imageData) {
     // Unhide image elements
     smallImage.style.display = 'block';
     smallImage.src = imageData;
-		movePic(imageData);
+		movePic(smallImage.src);
 }
 
 //Callback function when the picture has not been successfully taken
@@ -28,6 +28,7 @@ function onFail(message) {
 
 function movePic(file){ 
     window.resolveLocalFileSystemURI(file, resolveOnSuccess, resOnError); 
+		alert(file);
 } 
 
 //Callback function when the file system uri has been resolved
