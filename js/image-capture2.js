@@ -16,7 +16,8 @@ function onPhotoDataSuccess(imageData) {
     // Unhide image elements
     smallImage.style.display = 'block';
     smallImage.src = imageData;
-		movePic(smallImage.src);
+		alert(smallImage);
+		movePic(smallImage);
 }
 
 //Callback function when the picture has not been successfully taken
@@ -28,7 +29,7 @@ function onFail(message) {
 
 function movePic(file){ 
     window.resolveLocalFileSystemURI(file, resolveOnSuccess, resOnError); 
-		alert(file);
+		alert("this is the " . file);
 } 
 
 //Callback function when the file system uri has been resolved
