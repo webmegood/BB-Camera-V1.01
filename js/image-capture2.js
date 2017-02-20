@@ -16,8 +16,8 @@ function onPhotoDataSuccess(imageData) {
     // Unhide image elements
     smallImage.style.display = 'block';
     smallImage.src = imageData;
-		alert(smallImage);
-		movePic(smallImage);
+		alert(smallImage.src);
+		movePic(smallImage.src);
 }
 
 //Callback function when the picture has not been successfully taken
