@@ -28,7 +28,7 @@ function onFail(message) {
 
 
 function movePic(file){ 
-		alert("this is the " . file);
+		alert(file);
     window.resolveLocalFileSystemURI(file, resolveOnSuccess, resOnError); 
 } 
 
