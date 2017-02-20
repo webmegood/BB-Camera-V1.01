@@ -3,7 +3,7 @@ function getImage() {
  navigator.camera.getPicture(uploadPhoto, function(message) {
  alert('get picture failed');
  }, {
- quality: 100,
+ quality: 40,
  destinationType: navigator.camera.DestinationType.FILE_URI,
  sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
  });
