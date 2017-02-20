@@ -6,15 +6,15 @@
         id        = "com.phonegap.helloworld"
         version   = "1.0.0">
 
-    <name>Hello World</name>
+		<name>Beep Boards Vehicle Tracker</name>
+		<description>
+			Tracks and logs client trips
+		</description>
+	
+		<author email="tech@beepboards.com.au" href="http://beepboards.com.au">
+			The Beep Boards Team
+		</author>
 
-    <description>
-        Hello World sample application that responds to the deviceready event.
-    </description>
-
-    <author href="http://phonegap.com" email="support@phonegap.com">
-        PhoneGap Team
-    </author>
 
     <!--
         If you do not want any permissions to be added to your app, add the
@@ -45,8 +45,7 @@
     <!-- Plugins -->
 
     <!-- Core plugins -->
-		<plugin name=“cordova-plugin-geolocation” spec=“2.4.1” source=“npm” />		
-		
+		<plugin name="cordova-plugin-geolocation" spec="2.4.1" source="npm" />		
 		
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
