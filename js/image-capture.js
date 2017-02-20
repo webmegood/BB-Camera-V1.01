@@ -1,11 +1,3 @@
-$("#takePicBtn").click(function(){
-     getImage();
-});
-
-
-
-
-
 
 function getImage() {
  navigator.camera.getPicture(uploadPhoto, function(message) {
