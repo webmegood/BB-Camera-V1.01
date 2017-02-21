@@ -28,8 +28,9 @@ function uploadPhoto(imageURI) {
  options.mimeType = "image/jpeg";
  console.log(options.fileName);
  var params = new Object();
- params.value1 = "333776";
- params.value2 = "param";
+ var currentDate = new Date();
+ params.value1 = currentDate;
+ //params.value2 = "param";
  options.params = params;
  options.chunkedMode = false;
 
