@@ -21,6 +21,11 @@ function onFail(message) {
 }
 
 
+function toTimestamp(strDate){
+   var datum = Date.parse(strDate);
+   return datum/1000;
+}
+
 function uploadPhoto(imageURI) {
  var options = new FileUploadOptions();
  options.fileKey = "file";
@@ -29,8 +34,9 @@ function uploadPhoto(imageURI) {
  console.log(options.fileName);
  var params = new Object();
  var currentDate = new Date();
- params.value1 = currentDate;
- //params.value2 = "param";
+ params.currentTimestamp = toTimestamp(currentDate);
+ var user ="100769098";
+ params.username = user;
  options.params = params;
  options.chunkedMode = false;
 
