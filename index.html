@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Beep Boards Tracker v1.10</title>
+  <title>Beep Boards | Vehicle Tracker v1.10</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -15,7 +15,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
   <!-- CSS
@@ -43,23 +43,25 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   
   
-  <div class="menu_strip">
-    <div class="logo"><img src="images/logom.png"></div>
-	</div>
-  
-  
   
   <div class="container">
     <div class="row">
-      <div class="twelve columns" style="margin-top:100px; text-align:center">
-        <h3>Vehicle Tracker <div class="takePicBtn" id="takePicBtn"><i class="fa fa-camera fa-3" aria-hidden="true"></i></div></h3>
-        <div class="main_content" id="main_content">            
-          <div class="spinner" id="spinner">
+      <div class="twelve columns" style="text-align:center">
+        <div class="menu_strip">
+    			<h1>BEEP BOARDS</h1>
+        </div>
+        <h2>VEHICLE TRACKER</h2>
+        <div class="mainLogo"><img src="images/logo_lg.jpg" alt="Beep Boards Logo"></div>
+        <div class="tempArea"><img src="images/temp1.jpg" alt=""></div>
+        
+        <!--div class="main_content" id="main_content">            
+          <!--div class="spinner" id="spinner">
             <div class="double-bounce1"></div>
             <div class="double-bounce2"></div>
-          </div>        
+          </div-->        
           <!--p id="result"></p-->
-        </div>
+          <!--div class="takePicBtn" id="takePicBtn" style="display:none"><i class="fa fa-camera fa-3" aria-hidden="true"></i></div-->
+        <!--/div-->
       </div>
     </div>
   </div>
@@ -82,12 +84,18 @@
 </html>
 
 
-	<script type="text/javascript" src="js/gps.js"></script>
-	<script>
-		$("#takePicBtn").click(function(){
-			 capturePhoto();
-		});
-	</script>
+
+
+
+
+<script type="text/javascript" src="js/gps.js"></script>
+
+  
+<script>
+	$("#takePicBtn").click(function(){
+		capturePhoto();
+	});
+</script>
 
 
 
