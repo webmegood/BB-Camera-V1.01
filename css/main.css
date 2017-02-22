@@ -122,10 +122,10 @@ h2 {
 
 
 .imageRotateHorizontal{
-    -moz-animation: spinHorizontal .8s infinite linear;
-    -o-animation: spinHorizontal .8s infinite linear;    
-    -webkit-animation: spinHorizontal .8s infinite linear;
-    animation: spinHorizontal .8s infinite linear;
+    -moz-animation: spinHorizontal 1.2s infinite linear;
+    -o-animation: spinHorizontal 1.2s infinite linear;    
+    -webkit-animation: spinHorizontal 1.2s infinite linear;
+    animation: spinHorizontal 1.2s infinite linear;
 }
 
 @-moz-keyframes spinHorizontal {
@@ -154,3 +154,4 @@ h2 {
         -webkit-transform: rotateY(360deg);
     }
 }
+
