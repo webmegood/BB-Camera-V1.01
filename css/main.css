@@ -2,21 +2,42 @@
 	text-align:center;
 }
 .menu_strip {
-	background: #DDD;
-	height: 50px;
 	text-align: center;
 	width: 100%;
 	display: block;
-	margin: 0;
+	margin: 10vh 0 6vh 0;
+	position: relative;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Fjalla One', sans-serif;
+}
+h1 {
+	font-size: 2em;
+	color: #000;
+	letter-spacing: 0.05em;
+}
+h2 {
+	font-size: 1em;
+	color: #999;
+	letter-spacing: 0.05em;
+}
+.mainLogo img {
+	width: 136px;
+	height: auto;
+	position: relative;
+	margin: 10vh auto;
+	display:block;
+}
+.tempArea img {
+	width: 100%;
+	height: auto;
 	position: fixed;
-	top: 0px;
 	z-index: 100;
-	padding-top: 16px;
-	padding-bottom: 0px;
+	bottom: 0;
+	left: 0;
+	display:block;
 }
-.logo img {
-	width: 250px;
-}
+
 .takePicBtn {
 	display: inline-block;
 	height: 60px;
