@@ -28,6 +28,28 @@ h2 {
 	margin: 10vh auto;
 	display:block;
 }
+.status {
+	border: 1px solid #777;
+	height: 24px;
+	width: 24px;
+	border-radius: 50%;
+	position: fixed;
+	z-index: 102;
+	top: 2vh;
+	right: 2vh;
+}
+.status.status-green {
+	border: 1px solid #66cc66;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#70e070+0,52a55b+100 */
+background: rgb(112,224,112); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(112,224,112,1) 0%, rgba(82,165,91,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(112,224,112,1) 0%,rgba(82,165,91,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(112,224,112,1) 0%,rgba(82,165,91,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70e070', endColorstr='#52a55b',GradientType=0 ); /* IE6-9 */
+
+
+}
 .divider_h {
 	width: auto;
 	height: 2px;
@@ -49,16 +71,26 @@ h2 {
 	left: 0;
 	margin:0;
 	padding: 0;
+	background: #FFF;
 }
 .menuArea ul li {
-	height: 15vh;
+	height: 14vh;
 	text-align: center;
 	margin: 0;
-	line-height: 15vh;
-	padding:0;
+	line-height: 14vh;
+	padding: 0;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+	border-top-width: 4px;
+	border-top-style: solid;
+	border-top-color: #FFF;
 }
 ul > li {
 	display: table-cell;
+}
+.menuArea ul li:hover {
+	border-bottom-color: #AAA;
 }
 #menu-jobs {
 	width: 33%;
@@ -185,4 +217,3 @@ ul > li {
         -webkit-transform: rotateY(360deg);
     }
 }
-
