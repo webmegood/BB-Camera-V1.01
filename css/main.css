@@ -28,16 +28,47 @@ h2 {
 	margin: 10vh auto;
 	display:block;
 }
-.tempArea img {
+.divider_h {
+	width: auto;
+	height: 2px;
+	background: #EEE;
+	display: block;
+	position: fixed;
+	bottom: 15vh;
+	left: 7%;
+	right: 7%;
+	z-index: 101;
+}
+.menuArea ul {
+	display: table;
 	width: 100%;
-	height: auto;
 	position: fixed;
 	z-index: 100;
+	font-family: 'Fjalla One', sans-serif;
 	bottom: 0;
 	left: 0;
-	display:block;
+	margin:0;
+	padding: 0;
 }
-
+.menuArea ul li {
+	height: 15vh;
+	text-align: center;
+	margin: 0;
+	line-height: 15vh;
+	padding:0;
+}
+ul > li {
+	display: table-cell;
+}
+#menu-jobs {
+	width: 33%;
+}
+#menu-account {
+	width: 34%;
+}
+#menu-contact {
+	width: 33%;
+}
 .takePicBtn {
 	display: inline-block;
 	height: 60px;
