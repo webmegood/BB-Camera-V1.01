@@ -51,7 +51,7 @@
     			<h1>BEEP BOARDS</h1>
         </div>
         <h2>VEHICLE TRACKER</h2>
-        <div class="mainLogo"><img src="images/logo_lg.jpg" alt="Beep Boards Logo"></div>
+        <div class="mainLogo"><img src="images/logo_lg.jpg" alt="Beep Boards Logo" id='imageLoading'></div>
         <div class="tempArea"><img src="images/temp1.jpg" alt=""></div>
         
         <!--div class="main_content" id="main_content">            
@@ -98,5 +98,14 @@
 </script>
 
 
+
+
+<script>
+$(document).ready(function() {
+$("#imageLoading").addClass("imageRotateHorizontal").delay(2000).fadeOut(400).delay(200).fadeIn(20).delay(20).fadeOut(20).delay(10).fadeIn(20).queue(function(){
+    $(this).removeClass("imageRotateHorizontal").dequeue();
+});	
+});
+</script>
 
 
