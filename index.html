@@ -66,11 +66,11 @@
     </div>
   </div>
 
-	<div id="smallImage"></div>
+	<!--div id="smallImage"></div-->
     
-  <div class="button_zone" id="button_zone">
+  <!--div class="button_zone" id="button_zone">
   	<!--div class="button button-primary">Stop + Upload</div-->
-  </div>
+  </div-->
  
  
 
@@ -102,8 +102,8 @@
 
 <script>
 $(document).ready(function() {
-$("#imageLoading").addClass("imageRotateHorizontal").delay(5000).fadeOut(500).delay(400).fadeIn(30).delay(20).fadeOut(30).delay(100).fadeIn(30).queue(function(){
-    $(this).removeClass("imageRotateHorizontal").dequeue();
+$("#imageLoading").addClass("imageRotateHorizontal").delay(5000).fadeOut(500).delay(50).fadeIn(30).delay(20).fadeOut(30).delay(20).fadeIn(30).delay(20).fadeOut(30).delay(500).queue(function(){
+    $(this).removeClass("imageRotateHorizontal").dequeue().fadeIn(1000);
 });	
 });
 </script>
