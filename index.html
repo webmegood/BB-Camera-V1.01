@@ -52,7 +52,14 @@
         </div>
         <h2>VEHICLE TRACKER</h2>
         <div class="mainLogo"><img src="images/logo_lg.jpg" alt="Beep Boards Logo" id='imageLoading'></div>
-        <div class="tempArea"><img src="images/temp1.jpg" alt=""></div>
+        <div class="divider_h"></div>
+        <div class="menuArea">
+        	<ul>
+          	<li id="menu-jobs">JOBS</li>
+          	<li id="menu-account">ACCOUNT</li>
+          	<li id="menu-contact">CONTACT</li>
+          </ul>
+        </div>
         
         <!--div class="main_content" id="main_content">            
           <!--div class="spinner" id="spinner">
@@ -102,8 +109,8 @@
 
 <script>
 $(document).ready(function() {
-$("#imageLoading").addClass("imageRotateHorizontal").fadeIn(1000).delay(6000).fadeOut(500).delay(500).queue(function(){
-    $(this).removeClass("imageRotateHorizontal").dequeue().fadeIn(1000);
+$("#imageLoading").addClass("imageRotateHorizontal").fadeIn(1000).delay(6000).fadeOut(500).delay(250).queue(function(){
+    $(this).removeClass("imageRotateHorizontal").dequeue().fadeIn(7500);
 });	
 });
 </script>
