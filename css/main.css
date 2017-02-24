@@ -68,7 +68,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70e070', end
 	display: table;
 	width: 100%;
 	position: fixed;
-	z-index: 100;
+	z-index: 300;
 	font-family: 'Fjalla One', sans-serif;
 	bottom: 0;
 	left: 0;
@@ -257,7 +257,7 @@ ul > li {
 
 .secondary {
 	width: 100vw;
-  height: calc(100% - 15.5vh);
+  height: 100vh;
   float: right;
  	position: fixed;
 	z-index: 200;
