@@ -1,6 +1,9 @@
 .main_content {
 	text-align:center;
 }
+#home {
+	z-index: 19;
+}
 .menu_strip {
 	text-align: center;
 	width: 100%;
@@ -25,16 +28,16 @@ h2 {
 	width: 136px;
 	height: auto;
 	position: relative;
-	margin: 10vh auto;
+	margin: 15vh auto;
 	display:block;
 }
 .status {
 	border: 1px solid #777;
-	height: 24px;
-	width: 24px;
+	height: 20px;
+	width: 20px;
 	border-radius: 50%;
 	position: fixed;
-	z-index: 102;
+	z-index: 1000;
 	top: 2vh;
 	right: 2vh;
 }
@@ -86,13 +89,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70e070', end
 	border-top-style: solid;
 	border-top-color: #FFF;
 }
+.menuArea ul li:hover {
+	cursor:pointer;
+}
 ul > li {
 	display: table-cell;
 }
 .menuArea ul li:hover {
 	border-bottom-color: #AAA;
 }
-#menu-jobs {
+#menu-tracks {
 	width: 33%;
 }
 #menu-account {
@@ -159,8 +165,30 @@ ul > li {
 }
 
 
-
-
+.tracks-buttons {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	position: relative;
+	margin-top: 4vh;
+}
+.round-btn {
+	font-family: 'Fjalla One', sans-serif;
+	border-radius: 50%;
+	background: #F5F5F5;
+	border: 2px solid #CCC;
+	color: #666;
+	font-size: 1em;
+	text-align: center;
+	line-height: 100px;
+	width: 100px;
+	height: 100px;
+	text-transform: uppercase;
+	display:inline-block;
+	margin: 10px;
+}
 .button_zone {
 	width: auto;
 	left: 25px;
@@ -217,3 +245,34 @@ ul > li {
         -webkit-transform: rotateY(360deg);
     }
 }
+
+
+
+
+
+
+
+/*** ---- SECONDARY PAGES ---- ***/
+
+
+.secondary {
+	width: 100vw;
+  height: calc(100% - 15.5vh);
+  float: right;
+ 	position: fixed;
+	z-index: 200;
+	right: -100vw;
+	top: 0;
+	background: #FFF;
+	display: block;
+}
+#backgroundPanel {
+	z-index: 20;
+	right: 0;
+	display: none;
+}
+
+
+
+
+/*** ---- TRACKS PAGE ---- ***/

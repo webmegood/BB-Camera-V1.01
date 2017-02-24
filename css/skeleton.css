@@ -42,14 +42,14 @@
   box-sizing: border-box; }
 
 /* For devices larger than 400px */
-@media (min-width: 400px) {
+@media (min-width: 100px) {
   .container {
     width: 85%;
     padding: 0; }
 }
 
-/* For devices larger than 550px */
-@media (min-width: 550px) {
+/* For devices larger than 150px */
+@media (min-width: 150px) {
   .container {
     width: 80%; }
   .column,
@@ -124,7 +124,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-	font-family: 'Vollkorn', sans-serif;
+	font-family: 'Open Sans', sans-serif;
   color: #222; }
 
 
