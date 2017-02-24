@@ -62,7 +62,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70e070', end
 	bottom: 15vh;
 	left: 7%;
 	right: 7%;
-	z-index: 101;
+	z-index: 301;
 }
 .menuArea ul {
 	display: table;
@@ -177,17 +177,27 @@ ul > li {
 .round-btn {
 	font-family: 'Fjalla One', sans-serif;
 	border-radius: 50%;
-	background: #F5F5F5;
-	border: 2px solid #CCC;
+	border: 6px solid #CCC;
 	color: #666;
-	font-size: 1em;
+	font-size: 2em;
 	text-align: center;
-	line-height: 100px;
 	width: 100px;
 	height: 100px;
 	text-transform: uppercase;
 	display:inline-block;
 	margin: 10px;
+}
+.round-btn i {
+	margin-bottom: 5px;
+	color: #AAA;
+	display: block;
+	line-height: 100px;
+}
+.round-btn .button-text {
+	font-size: 0.5em;
+	color: #AAA;
+	line-height: 40px;
+	display: block;
 }
 .button_zone {
 	width: auto;
