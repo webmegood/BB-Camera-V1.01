@@ -16,6 +16,7 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
   <!-- CSS
@@ -39,29 +40,159 @@
 </head>
 <body>
 
-  <!-- Primary Page Layout
+  <!-- Home Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   
   
   <div class="status status-green blink_me"></div>
   
-  <div class="container">
+  <div class="container" id="home">
     <div class="row">
       <div class="twelve columns" style="text-align:center">
         <div class="menu_strip">
     			<h1>BEEP BOARDS</h1>
         </div>
-        <h2>VEHICLE TRACKER</h2>
-        <div class="mainLogo"><img src="images/logo_lg.jpg" alt="Beep Boards Logo" id='imageLoading'></div>
+          <h2>VEHICLE TRACKER</h2>
+          <div class="mainLogo"><img src="images/logo_lg.jpg" alt="Beep Boards Logo" id='imageLoading'></div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+
+  <!-- Background Panel
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  
+	<div class="container secondary" id="backgroundPanel"></div>  
+  
+  
+  
+  
+  <!-- Tracks Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  
+	<div class="container secondary" id="tracks">
+    <div class="row">
+      <div class="twelve columns" style="text-align:center">
+        <div class="menu_strip">
+    			<h1>TRACKS</h1>
+        </div>
+      </div>
+    </div>
+    
+    
+		<div class="tracks-buttons">
+			<div class="round-btn">Active</div>
+    	<div class="round-btn">New</div> 
+    	<div class="round-btn">Log</div>    
+  	</div>    
+  
+
+    <div class="row" style="display:none">
+      <div class="ten columns">
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Sex</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dave Gamache</td>
+              <td>26</td>
+              <td>Male</td>
+              <td>San Francisco</td>
+            </tr>
+            <tr>
+              <td>Dwayne Johnson</td>
+              <td>42</td>
+              <td>Male</td>
+              <td>Hayward</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>    
+    </div>
+
+  </div>  
+
+
+  <!-- Account Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  
+	<div class="container secondary" id="account">
+    <div class="row">
+      <div class="twelve columns" style="text-align:center">
+        <div class="menu_strip">
+    			<h1>ACCOUNT</h1>
+        </div>
+      </div>
+    </div>
+  </div>  
+  
+
+
+
+
+  <!-- Contact Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  
+	<div class="container secondary" id="contact">
+    <div class="row">
+      <div class="twelve columns" style="text-align:center">
+        <div class="menu_strip">
+    			<h1>CONTACT</h1>
+        </div>
+      </div>
+    </div>
+  </div>  
+  
+
+
+
+
+  <!-- Menu Area
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
         <div class="divider_h"></div>
         <div class="menuArea">
         	<ul>
-          	<li id="menu-jobs">JOBS</li>
+          	<li id="menu-tracks">TRACKS</li>
           	<li id="menu-account">ACCOUNT</li>
           	<li id="menu-contact">CONTACT</li>
           </ul>
         </div>
-        
+
+
+
+
+
+
+
+
+	<!--div id="smallImage"></div-->
+    
+  <!--div class="button_zone" id="button_zone">
+  	<!--div class="button button-primary">Stop + Upload</div-->
+  <!--/div-->
+ 
+ 
+ 
+ 
+ 
+ 
+
         <!--div class="main_content" id="main_content">            
           <!--div class="spinner" id="spinner">
             <div class="double-bounce1"></div>
@@ -70,19 +201,10 @@
           <!--p id="result"></p-->
           <!--div class="takePicBtn" id="takePicBtn" style="display:none"><i class="fa fa-camera fa-3" aria-hidden="true"></i></div-->
         <!--/div-->
-      </div>
-    </div>
-  </div>
 
-	<!--div id="smallImage"></div-->
-    
-  <!--div class="button_zone" id="button_zone">
-  	<!--div class="button button-primary">Stop + Upload</div-->
-  </div-->
- 
- 
 
- 
+
+
   
   
 
@@ -95,31 +217,6 @@
 
 
 
-
 <script type="text/javascript" src="js/gps.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
-  
-<script>
-	$("#takePicBtn").click(function(){
-		capturePhoto();
-	});
-</script>
-
-
-
-
-<script>
-$(document).ready(function() {
-$("#imageLoading").addClass("imageRotateHorizontal").fadeIn(1000).delay(6000).fadeOut(500).delay(250).queue(function(){
-    $(this).removeClass("imageRotateHorizontal").dequeue().fadeIn(750);
-});	
-});
-</script>
-
-<script>
-$(document).ready(function() {
-(function blink() { 
-  $('.blink_me').fadeOut(500).fadeIn(500, blink); 
-})();
-});
-</script>
